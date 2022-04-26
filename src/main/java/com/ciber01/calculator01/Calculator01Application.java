@@ -1,4 +1,4 @@
-package com.ciberXX.calculator01;
+package com.ciber01.calculator01;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

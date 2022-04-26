@@ -3,6 +3,7 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 	id 'jacoco'
+	id 'checkstyle'
 }
 
 group = 'com.ciber01'
@@ -22,11 +23,13 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+tasks.named('checkstyleMain') {
 jacocoTestCoverageVerification {
 violationRules {
 rule {
 limit {
 minimum = 0.2
+}
 }
 }
 }
